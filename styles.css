@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap");
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    color: white;
+}
+
+#sidebar {
+    background-color: black;
+    min-width: 200px;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sidebar img {
+    width: 75%;
+    margin-top: 2em;
+}
+
+#sidebar ul {
+    padding: 0px 0px 0px 0px;
+    list-style-type: none;
+    width: 80%;
+    margin-top: 3em;
+}
+
+#sidebar ul li {
+    padding: 1em 2em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    transition: background-color 0.4s linear;
+}
+
+#sidebar ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#sidebar ion-icon {
+    margin-right: 0.5em;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: rgb(18, 18, 18);
+}
+
+#search-bar {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 1.5em 10px;
+    display: flex;
+}
+
+#search-bar ion-icon {
+    margin: 0px 0.5em;
+    border-radius: 50px;
+    padding: 1em;
+    cursor: pointer;
+    transition: background-color 0.4s linear;
+}
+
+#search-bar > ion-icon:hover {
+    background-color: black;
+}
+
+#search-wrapper > ion-icon {
+    margin: 0px;
+}
+
+#search-wrapper {
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+}
+
+#search-wrapper input {
+    border: none;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    max-width: 70%;
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 1em;
+    padding: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.4s linear;
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.card-head {
+    position: relative;
+}
+
+.card-head ion-icon {
+    opacity: 0;
+    padding: 1em;
+    background-color: green;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    transform: translateY(30%);
+    transition: all 0.4s linear;
+}
+
+.card-head:hover ion-icon {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+

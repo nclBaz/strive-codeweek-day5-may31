@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spotify Clone June 2nd</title>
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+  <main>
+
+    <div id="sidebar">
+      <img src="assets/spotify-logo.png" alt="spotify-logo">
+
+      <ul>
+        <li>
+          <ion-icon name="home-sharp"></ion-icon>
+          <span>Home</span>
+        </li>
+        <li>
+          <ion-icon name="apps-sharp"></ion-icon>
+          <span>Library</span>
+        </li>
+        <li>
+          <ion-icon name="search"></ion-icon>
+          <span>Search</span>
+        </li>
+      </ul>
+    </div>
+    <div id="right">
+      <nav id="search-bar">
+        <ion-icon name="chevron-back-sharp"></ion-icon>
+        <ion-icon name="chevron-forward-sharp"></ion-icon>
+
+        <div id="search-wrapper">
+          <ion-icon name="search"></ion-icon>
+          <input type="search" onkeypress="search(event)">
+        </div>
+      </nav>
+      <div id="content">
+
+        <div class="card">
+          <div class="card-head">
+            <img src="assets/album-cover.jpeg">
+            <ion-icon name="play-sharp"></ion-icon>
+          </div>
+          <div class="card-body">
+            <p>Album title</p>
+            <span>Artist name</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
